@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"server.js",
+"sourceRoot":"file://",
+"sources":["C:/HaxeToolkit/haxe/std/js/_std/EReg.hx","C:/Users/Tiago/Desktop/Haxe+Express Template/src/Server.hx","C:/HaxeToolkit/haxe/lib/js-kit/git/js/npm/connect/support/Middleware.hx","C:/HaxeToolkit/haxe/lib/js-kit/git/js/support/RegExp.hx","C:/Users/Tiago/Desktop/Haxe+Express Template/src/routes/Index.hx","C:/Users/Tiago/Desktop/Haxe+Express Template/src/routes/Users.hx","C:/HaxeToolkit/haxe/lib/js-kit/git/npm/Package.hx","C:/HaxeToolkit/haxe/lib/js-kit/git/js/Node.hx","C:/HaxeToolkit/haxe/lib/js-kit/git/js/npm/express/Static.hx"],
+"names":[],
+"mappings":";OAyBO,SAAgD;CACtD,EAAM,FAAU,AAAU;CAC1B,EAAiB,QAAiB,VAAE;;;cCL9B,HAAgB;CACX;CACD;CAIV;;EAAQ,yCAAW,1CAAU,AAAiB;EAA9C;;;CAGA;;EAAQ,iCAAY;EAApB;;;CAIA;;EAAQ;EAAR;;;CACA;;EAAQ,DAAuB,UAAY;EAA3C;;;CACA;;EAAQ;EAAR;;;CAGA,AAAS,AAAI;CACb,AAAS,AAAS;CAGlB,AAAQ,sBAA0C;EACvC,SAAW;EACb,CAAa;EACrB,DAAK;;CAON,AAAQ,8BAAuD;EAC9D,DAAmB,GAAc;EACjC,DAAS,SACC,FACF;;CAgBT,WAAO,TAAyB;CAChC,AAAW;;;;;;;;;sECjEgB,jDAC3B;CAAe;;iEAEY,hDAC3B;CAAe;;gEAEY,/CAC3B;CAAe;;;;;;;;2CCPY,/BAC3B;CAAe;;yCAEU,7BACzB;CAAO,QAAU,RAChB,AAAE,AAAe,AAAM,EACrB,FAAE,AAAW,AAAM,EACnB,FAAE,AAAc,AAAM;;;eCHnB,JAAe;CACrB,EAAS;CAET,AAAY,AAAI,iBACf;CAAQ;;;eCJH,JAAe;CACrB,EAAS;CAET,AAAY,AAAI,iBACf;CAAQ;;;AC6CQ,CAuGwB;AAtF3B,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;AArG7C,CAuGwB;AAvGxB,CAuGwB;AAvGxB,CAuGwB;AAvGxB,CAuGwB;AAtF3B,GAjBG,FAqG6C;AApFhD,GAjBG,FAqG6C;kBCvJY;kBACN;iBACT;kBACb;qBACgB;oBACD;kBAEM;qBAC0B;sBACC;uBAC5B;wBACC;2DCrBpE,AAAY;0DACZ,AAAW;4DACX,AAAa;;;;"
+}

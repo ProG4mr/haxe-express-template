@@ -1,4 +1,5 @@
 -cp src
+-debug
 -lib js-kit
 -main Server
 -js www/server.js

@@ -1,17 +1,13 @@
 package;
 
-import js.Lib;
 import js.Node;
-import js.node.Http;
 import js.node.Path;
 import js.npm.connect.BodyParser;
 import js.npm.Express;
 import js.npm.express.CookieParser;
-import js.npm.express.Favicon;
 import js.npm.express.Logger;
 import js.npm.express.Request;
 import js.npm.express.Response;
-import js.npm.express.Router;
 import js.npm.express.Static;
 import js.support.Error;
 import routes.Index;
@@ -32,7 +28,11 @@ class Server {
 		//app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 		// logger after icon and static files so they are not logged.
-		app.use(new Logger('combined')); 
+		#if debug
+		app.use(new Logger('dev'));
+		#else
+		app.use(new Logger('combined'));
+		#end
 		app.use(BodyParser.json());
 		app.use(BodyParser.urlencoded( { extended: false } ));
 		app.use(new CookieParser());
