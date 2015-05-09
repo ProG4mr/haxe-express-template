@@ -45,8 +45,8 @@ Server.main = function() {
 		next(err);
 	});
 	app["use"](function(err1,req1,res1,next1) {
-		console.log(err1.stack != null?err1.stack:err1.toString());
-		res1.json({ name : err1.name, message : err1.message, status : err1.status || 500, stack : err1.stack});
+		console.log(err1.status != null?err1.toString():err1.stack);
+		res1.json({ name : err1.name, message : err1.message, status : err1.status != null?err1.status:500, stack : err1.stack});
 	});
 	console.log("starting server on port " + port);
 	app.listen(port);
