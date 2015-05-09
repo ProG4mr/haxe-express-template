@@ -1,6 +1,8 @@
 package;
 
+import js.Error;
 import js.Node;
+import js.node.JSON;
 import js.node.Path;
 import js.npm.connect.BodyParser;
 import js.npm.Express;
@@ -9,7 +11,6 @@ import js.npm.express.Logger;
 import js.npm.express.Request;
 import js.npm.express.Response;
 import js.npm.express.Static;
-import js.support.Error;
 import routes.Index;
 import routes.Users;
 
@@ -53,24 +54,26 @@ class Server {
 		// development error handler
 		// will print stacktrace
 		app.use(function(err:Dynamic, req:Request, res:Response, next) {
-			res.status(untyped err.status || 500);
-			res.json({
+			trace(err.stack != null ? err.stack : err.toString());
+			res.json( {
+				name: err.name,
 				message: err.message,
-				error: err,
+				status: untyped err.status || 500,
+				stack: err.stack,
 			});
 		});
 		#else 
 		// production error handler
 		// no stacktraces leaked to user
 		app.use(function(err, req, res, next) {
-			res.status(untyped err.status || 500);
+			trace(err.toString());
 			res.json( {
+				name: err.name,
 				message: err.message,
-				error: {}
+				status: untyped err.status || 500,
 			});
 		});
 		#end
-		
 		
 		trace('starting server on port $port');
 		app.listen(port);
